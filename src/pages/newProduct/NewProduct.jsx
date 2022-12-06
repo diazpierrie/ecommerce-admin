@@ -9,7 +9,6 @@ import {
 import app from "../../firebase";
 import { addProduct } from "../../redux/apiCalls";
 import { useDispatch } from "react-redux";
-import {useHistory} from "react-router-dom";
 
 export default function NewProduct() {
   const [inputs, setInputs] = useState({});
@@ -76,7 +75,7 @@ export default function NewProduct() {
       <h1 className="addProductTitle">New Product</h1>
       <form className="addProductForm">
         <div className="addProductItem">
-          <label>Image</label>
+          <label>Imagen</label>
           <input
             type="file"
             id="file"
@@ -84,25 +83,25 @@ export default function NewProduct() {
           />
         </div>
         <div className="addProductItem">
-          <label>Title</label>
+          <label>Titulo</label>
           <input
             name="title"
             type="text"
-            placeholder="Apple Airpods"
+            placeholder="Auriculares de marca"
             onChange={handleChange}
           />
         </div>
         <div className="addProductItem">
-          <label>Description</label>
+          <label>Descripcion</label>
           <input
             name="desc"
             type="text"
-            placeholder="description..."
+            placeholder="Descripcion"
             onChange={handleChange}
           />
         </div>
         <div className="addProductItem">
-          <label>Price</label>
+          <label>Precio</label>
           <input
             name="price"
             type="number"
@@ -111,7 +110,7 @@ export default function NewProduct() {
           />
         </div>
         <div className="addProductItem">
-          <label>Categories</label>
+          <label>Categorias</label>
           <input type="text" placeholder="jeans,skirts" onChange={handleCat} />
         </div>
         <div className="addProductItem">

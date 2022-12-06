@@ -47,7 +47,7 @@ export default function Home() {
       <FeaturedInfo />
       <Chart
         data={userStats}
-        title="User Analytics"
+        title="Analiticas de Usuario"
         grid
         dataKey="Active User"
       />

@@ -58,9 +58,9 @@ export default function Product() {
   return (
     <div className="product">
       <div className="productTitleContainer">
-        <h1 className="productTitle">Product</h1>
+        <h1 className="productTitle">Producto</h1>
         <Link to="/newproduct">
-          <button className="productAddButton">Create</button>
+          <button className="productAddButton">Crear</button>
         </Link>
       </div>
       <div className="productTop">
@@ -78,11 +78,11 @@ export default function Product() {
               <span className="productInfoValue">{product._id}</span>
             </div>
             <div className="productInfoItem">
-              <span className="productInfoKey">sales:</span>
+              <span className="productInfoKey">ventas:</span>
               <span className="productInfoValue">5123</span>
             </div>
             <div className="productInfoItem">
-              <span className="productInfoKey">in stock:</span>
+              <span className="productInfoKey">hay stock:</span>
               <span className="productInfoValue">{product.inStock}</span>
             </div>
           </div>
@@ -91,15 +91,15 @@ export default function Product() {
       <div className="productBottom">
         <form className="productForm">
           <div className="productFormLeft">
-            <label>Product Name</label>
+            <label>Nombre del Producto</label>
             <input type="text" placeholder={product.title} />
-            <label>Product Description</label>
+            <label>Descripcion del Producto</label>
             <input type="text" placeholder={product.desc} />
-            <label>Price</label>
+            <label>Precio</label>
             <input type="text" placeholder={product.price} />
-            <label>In Stock</label>
+            <label>Hay Stock</label>
             <select name="inStock" id="idStock">
-              <option value="true">Yes</option>
+              <option value="true">Si</option>
               <option value="false">No</option>
             </select>
           </div>
@@ -111,7 +111,7 @@ export default function Product() {
               </label>
               <input type="file" id="file" style={{ display: "none" }} />
             </div>
-            <button className="productButton">Update</button>
+            <button className="productButton">Actualizar</button>
           </div>
         </form>
       </div>
