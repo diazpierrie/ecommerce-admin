@@ -23,9 +23,9 @@ export default function FeaturedInfo() {
       <div className="featuredItem">
         <span className="featuredTitle">Ganancias</span>
         <div className="featuredMoneyContainer">
-          <span className="featuredMoney">${income[1]?.total}</span>
+          <span className="featuredMoney">$45,000</span>
           <span className="featuredMoneyRate">
-            %{Math.floor(perc)}{" "}
+            %{Math.floor(159)}{" "}
             {perc < 0 ? (
               <ArrowDownward className="featuredIcon negative" />
             ) : (
